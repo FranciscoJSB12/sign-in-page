@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Sign in</title>
+    <style>
+        * {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        h1, p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            font-weight: bold;
+        }
+        input {
+            border: none;
+            border-radius: 8px;
+            padding: 6px;
+            background-color: #EEEEEE;
+            height: 30px;
+            margin-bottom: 16px;
+        }
+        button {
+            height: 50px;
+            border: none;
+            border-radius: 8px;
+            background-color: #11468F;
+            color: #EEEEEE;
+            cursor: pointer;
+            margin-bottom: 24px;
+        }
+        button:hover {
+            border: 2px solid #DA1212;
+        }
+        .links {
+            font-size: 14px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+        }
+
+        @media (max-width: 360px) {
+            .flexbox {
+                width: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <form class="flexbox" action="/">
+            <h1>Welcome</h1>
+            <p>Sign in here!</p>
+            <input type="email" placeholder="Your email">
+            <input type="password" placeholder="Your password">
+            <button>Sign in</button>
+            <a class="links" href="/">Forgot your password?</a>
+            <a class="links" href="/">Don't have an account?</a>
+        </form>
+    </section>
+</body>
+</html>
